@@ -29,6 +29,8 @@ gem 'popper_js', '~> 1.16'
 # Jquery-rails
 gem 'jquery-rails', '~> 4.3.5'
 
+gem 'devise'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
