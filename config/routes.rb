@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'index', to: 'users#index'
   #post "users", to: "users#creation"
 
+  get '/visits/show', to: 'visits#show', as: :show_visit
   get '/visits/new', to: 'visits#new', as: :new_visit
   post 'visits', to: 'visits#create'
 

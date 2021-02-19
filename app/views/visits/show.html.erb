@@ -1,0 +1,35 @@
+<section class="offset-md-1 col-md-10 col-xs-12">
+  <div class="my-3 content py-3 ">
+
+    <div class="table-responsive">
+      <div class="w-100 text-center">
+        <h1>Visitas registradas</h1>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto border-dark" style="width: 200px;">
+      </div>
+
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th class="text-center">Nombre</th>
+          <th class="text-center">Fecha</th>
+          <th class="text-center">Valoración del sitio web</th>
+        </tr>
+        </thead>
+
+        <% @visit.each do |visit| %>
+          <tbody>
+          <tr>
+            <td class="text-center align-middle"> <%= visit.name %> </td>
+            <td class="text-center align-middle"> <%= visit.date %> </td>
+            <td class="text-center align-middle"> <%= visit.valoration %> </td>
+          </tr>
+
+          </tbody>
+        <% end %>
+      </table>
+      <div class="text-center">
+        <%= link_to "Volver al nicio", root_path, class: "btn btn-danger ml-1"  %>
+      </div>
+    </div>
+  </div>
+</section>
