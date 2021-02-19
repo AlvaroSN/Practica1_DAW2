@@ -1,0 +1,27 @@
+<section class="text-center p-4">
+  <%= form_with(model: @visit, local: true) do |form| %>
+
+    <h1>Formulario para añadir datos de la visita a la web</h1>
+
+    <div class="row">
+      <div class="form-group col-12 text-center">
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+      </div>
+      <div class="form-group col-12 text-center">
+        <%= form.label :date, "Fecha" %>
+        <%= form.text_field :date %>
+      </div>
+      <div class="form-group col-12 text-center">
+        <%= form.label :valoration, "Valoración" %>
+        <%= form.text_field :valoration %>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mb-2 mt-4">
+      <%= form.submit "Guardar", class: "btn btn-dark" %>
+      <%= link_to "Volver al nicio", root_path, class: "btn btn-danger ml-1"  %>
+    </div>
+
+  <% end %>
+
+</section>
