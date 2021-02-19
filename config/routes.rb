@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
   devise_for :users
+
   get 'users', to: 'users#index'
   get 'index', to: 'users#index'
-  get 'new', to: 'users#new', as: :new_user
-  post "users", to: "users#create"
+  get 'add', to: 'users#add', as: :add_user
+  post "users", to: "users#creation"
 
   root to: "users#index"
 

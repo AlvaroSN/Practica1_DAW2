@@ -4,24 +4,25 @@ class UsersController < ApplicationController
   layout 'application'
 
   def index
+    @user = User.all
   end
 
-  def new
+  def add
     @user = User.new
   end
 
-  def create
+  def creation
     @user = User.create(params_users)
     if @user.save
-      redirect_to
+      redirect_to root_path
     else
-      render 'new'
+      render 'add'
     end
   end
 
   private
   def params_users
-    params.require(:user).permit(:name, :email, :password)
+    params.require(:user).permit(:email, :encrypted_password)
   end
 
 end
