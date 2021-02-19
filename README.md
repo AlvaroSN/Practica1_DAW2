@@ -1,24 +1,14 @@
-# README
+# Inicio de sesión y formulario
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esta aplicación ha sido desarrollada con Ruby on Rails y una base de datos SQLite3. Para poder ejecutarlo es necesario arrancar el servidor Rails con el comando:
 
-Things you may want to cover:
+```
+rails server
+```
 
-* Ruby version
+## La aplicación cuenta con:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* La ágina inicial en la que podremos iniciar sesión o registrarnos, y una vez la iniciemos nos permitirá acceder al formulario
+* Las páginas respectivas para iniciar sesión o registrarnos.
+* La página para rellenar el formulario de la visita a la web, en la que se podrá añadir el nombre, la fecha y una opinión el sitio web
+* La página donde se puede observar las distinas opiniones que se han puesto en el formulario
