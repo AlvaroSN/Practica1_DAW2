@@ -1,6 +1,7 @@
 # Inicio de sesión y formulario
 
-Esta aplicación ha sido desarrollada con Ruby on Rails y una base de datos SQLite3. Para poder ejecutarlo es necesario arrancar el servidor Rails con el comando:
+Esta aplicación ha sido desarrollada con Ruby on Rails y una base de datos SQLite3. La gestión de la autentificacón de usuarios a sido a traves de la gema "devise".
+Para poder ejecutarlo es necesario arrancar el servidor Rails con el comando:
 
 ```
 rails server
@@ -21,3 +22,5 @@ rails db:migrate
 
 
 **La base de datos estará vacía, por lo que habrá que registrarse para poder acceder y añadir alguna entrada a través del formulario para verla en la página de las visitas.**
+
+En el caso de que hubiese algún problema con la ejecución de la aplicación se deberá contactar conmigo, debido a las configuraciones que hay que hacer para realizar proyectos en Ruby on Rails, que en mi caso ha sido a través del IDE RubyMine.
