@@ -8,7 +8,9 @@ rails server
 
 ## La aplicación cuenta con:
 
-* La ágina inicial en la que podremos iniciar sesión o registrarnos, y una vez la iniciemos nos permitirá acceder al formulario
+* La página inicial en la que podremos iniciar sesión o registrarnos, y una vez la iniciemos nos permitirá acceder al formulario. También están los correos registrados.
 * Las páginas respectivas para iniciar sesión o registrarnos.
 * La página para rellenar el formulario de la visita a la web, en la que se podrá añadir el nombre, la fecha y una opinión el sitio web
 * La página donde se puede observar las distinas opiniones que se han puesto en el formulario
+
+**Para iniciar sesión puede usar el correo que se muestra en la página inicial, usando la contraseña: "contraseña"**
